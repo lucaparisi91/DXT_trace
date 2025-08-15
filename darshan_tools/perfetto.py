@@ -16,8 +16,9 @@ def to_json(data: pd.DataFrame) -> json:
 
     trace = {
         "traceEvents": [],
+        "displayTimeUnit": "ms"  # Assuming the time unit is milliseconds
     }
-
+    
     for _, row in data.iterrows():
         event_type = row['event_type']
         timestamp = row['time']
