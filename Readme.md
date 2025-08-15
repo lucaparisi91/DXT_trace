@@ -12,3 +12,6 @@ You can run tests with
 ```bash
 pytest -vvv --capture=tee-sys tests
 ```
+
+Json generated is baed on the perfetto JSON format described at
+https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview?tab=t.0 .
