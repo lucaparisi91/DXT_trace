@@ -1,0 +1,88 @@
+# darshan log version: 3.41
+# compression method: ZLIB
+# exe: /work/n02/n02/lparisin02/wp2/synthetic_io_benchmarks/lfric/r11724_ngarch_orog_010725/applications/lfric_atm/bin/lfric_atm configuration.nml 
+# uid: 35581
+# jobid: 10556358
+# start_time: 1755245091
+# start_time_asci: Fri Aug 15 09:04:51 2025
+# end_time: 1755245474
+# end_time_asci: Fri Aug 15 09:11:14 2025
+# nprocs: 5020
+# run time: 382.8621
+# metadata: lib_ver = 3.4.7
+# metadata: h = romio_no_indep_rw=true;cb_nodes=4
+
+# log file regions
+# -------------------------------------------------------
+# header: 1328 bytes (uncompressed)
+# job data: 521 bytes (compressed)
+# record table: 104 bytes (compressed)
+# POSIX module: 941649 bytes (compressed), ver=4
+# MPI-IO module: 45006 bytes (compressed), ver=3
+# LUSTRE module: 440963 bytes (compressed), ver=2
+# STDIO module: 371628 bytes (compressed), ver=2
+# DXT_POSIX module: 13507933 bytes (compressed), ver=1
+# DXT_MPIIO module: 502140 bytes (compressed), ver=2
+
+# mounted file systems (mount point and fs type)
+# -------------------------------------------------------
+# mount entry:	/var/opt/cray/pe/pe_images/aocc-compiler-3.2.0	squashfs
+# mount entry:	/var/opt/cray/pe/pe_images/aocc-compiler-4.0.0	squashfs
+# mount entry:	/run/credentials/systemd-sysusers.service	ramfs
+# mount entry:	/var/opt/cray/pe/pe_images/base-22.12	squashfs
+# mount entry:	/var/opt/cray/pe/pe_images/base-23.09	squashfs
+# mount entry:	/var/opt/cray/pe/pe_images/aocc-22.12	squashfs
+# mount entry:	/var/opt/cray/pe/pe_images/aocc-23.09	squashfs
+# mount entry:	/var/opt/cray/pe/aocc-compiler-3.2.0	dvs
+# mount entry:	/var/opt/cray/pe/aocc-compiler-4.0.0	dvs
+# mount entry:	/var/opt/cray/pe/pe_images/amd-22.12	squashfs
+# mount entry:	/var/opt/cray/pe/pe_images/amd-23.09	squashfs
+# mount entry:	/var/opt/cray/pe/base-22.12	dvs
+# mount entry:	/var/opt/cray/pe/base-23.09	dvs
+# mount entry:	/var/opt/cray/pe/aocc-22.12	dvs
+# mount entry:	/var/opt/cray/pe/aocc-23.09	dvs
+# mount entry:	/var/opt/cray/pe/amd-22.12	dvs
+# mount entry:	/var/opt/cray/pe/amd-23.09	dvs
+# mount entry:	/sys/firmware/efi/efivars	efivarfs
+# mount entry:	/sys/kernel/debug/tracing	tracefs
+# mount entry:	/mnt/lustre/a2fs-work4	lustre
+# mount entry:	/mnt/lustre/a2fs-work3	lustre
+# mount entry:	/mnt/lustre/a2fs-work2	lustre
+# mount entry:	/mnt/lustre/a2fs-work1	lustre
+# mount entry:	/mnt/lustre/a2fs-nvme	lustre
+# mount entry:	/sys/kernel/tracing	tracefs
+# mount entry:	/sys/kernel/config	configfs
+# mount entry:	/.rootfs_lower_ro	squashfs
+# mount entry:	/usr/share/lmod	overlay
+# mount entry:	/sys/fs/cgroup	cgroup2
+# mount entry:	/sys/fs/pstore	pstore
+# mount entry:	/opt/cray/pe	overlay
+# mount entry:	/sys/fs/bpf	bpf
+# mount entry:	/dev/mqueue	mqueue
+# mount entry:	/opt/AMD	overlay
+# mount entry:	/dev	devtmpfs
+# mount entry:	/	overlay
+
+# ***************************************************
+# DXT_POSIX module data
+# ***************************************************
+
+# DXT, file_id: 17907697916058883057, file_name: /mnt/lustre/a2fs-nvme/work/n02/n02/lparisin02/lfric/striped/apps1.1/nwp-gal9_N1280L70_C896L70.nc
+# DXT, rank: 0, hostname: nid001276
+# DXT, write_count: 0, read_count: 232
+# DXT, mnt_pt: /mnt/lustre/a2fs-nvme, fs_type: lustre
+# DXT, Lustre stripe components:
+#	[Component 1] stripe_ext: 0 - EOF, stripe_size: 1048576, stripe_count: 20, OSTs: 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 0 1 2 3
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)   [OST]
+ X_POSIX       0   read        0               0               8     28.8534     28.8534    [4]
+ X_POSIX       0   read        1               0              16     28.8535     28.8535    [4]
+ X_POSIX       0   read        2              16              80     28.8535     28.8535    [4]
+ X_POSIX       0   read        3              96             512     28.8536     28.8536    [4]
+ X_POSIX       0   read        4             608             122     28.8536     28.8536    [4]
+ X_POSIX       0   read        5             998              63     28.8536     28.8536    [4]
+ X_POSIX       0   read        6        77076710              38     28.8537     28.8537    [17]
+ X_POSIX       0   read        7       115618737             146     28.8537     28.8537    [14]
+ X_POSIX       0   read        8     37957334335             512     28.8537     28.8537    [2]
+ X_POSIX       0   read        9       115619515             512     28.8537     28.8537    [14]
+ X_POSIX       0   read       10     44739572770              85     28.8537     28.8537    [10]
+ X_POSIX       0   read       11       462455872             512     28.8537     28.8542    [5]
