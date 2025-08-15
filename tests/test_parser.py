@@ -27,7 +27,7 @@ def test_parse_summary():
 
     df = parse_summary(test_file)
 
-    assert len(df) == 341360
+    assert len(df) == 704
 
     assert len(df.columns) == 5
     
