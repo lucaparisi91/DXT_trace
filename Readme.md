@@ -1,17 +1,35 @@
-# Convert a DXT trace to a Perfetto trace
+# darshan_tools
 
-This script converts a DXT trace to a Perfetto trace.
-You can convert a trace generate with `darshan-dxt-parser` to a json trace for visualisation, as the in the example below
+This package contains some tools for the analysis of darshan parsed outputs.
+
+
+## Installing
+
+You can install with pip using
 
 ```bash
-python3 bin/dxt-to-perfetto.py dxt-trace.txt > trace.json
+pip install -e .
 ```
+
+## Usage
+
+### DXT trace to perfetto
+
+A darshan DXT trace can be converted to a json file using the `dxt-to-perfetto dxt-trace.txt` command, where  `dxt-trace.txt` is the name of a file containing output from the darshan-util tool `darshan-dxt-parser` . For example , one my use
+
+```bash
+darshan-dxt-parser my_profile.darshan > dxt-trace.txt
+dxt-to-perfetto dxt-trace.txt > trace.json
+```
+
+The generated JSON output is based on the perfetto JSON format described at
+https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview?tab=t.0 .
+
+## Testing
 
 You can run tests with 
 
 ```bash
-pytest -vvv --capture=tee-sys tests
+pytest -vvv --capture=tee-sys src/tests
 ```
 
-Json generated is baed on the perfetto JSON format described at
-https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview?tab=t.0 .
