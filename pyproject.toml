@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darshan_tools"
+version = "0.1.0"
+description = "A Python package for transforming DXT parsed outputs from Darshan to JSON traces"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Luca Parisi", email = "l.parisi@epcc.ed.ac.uk"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["dxt", "darshan", "tracing"]
+dependencies = [
+    "pandas"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[project.scripts]
+dxt-to-perfetto = "darshan_tools.dxt_to_perfetto:convert_dxt_to_perfetto_cli"
+
+[project.urls]
+Homepage = "https://github.com/lucaparisi91/DXT_trace.git"
+Repository = "https://github.com/lucaparisi91/DXT_trace.git"
+Issues = "https://github.com/lucaparisi91/DXT_trace/issues"

@@ -10,9 +10,7 @@ from darshan_tools.perfetto import to_json
 from darshan_tools.parser import parse_dxt
 import json
 
-
-if __name__== "__main__":
-
+def convert_dxt_to_perfetto_cli():
     parser = argparse.ArgumentParser(description="Convert DXT trace to Perfetto trace format.")
     parser.add_argument("input_file", help="Path to the DXT trace in text format.")
     args = parser.parse_args()
