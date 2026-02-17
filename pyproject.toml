@@ -30,7 +30,7 @@ dev = [
 
 [project.scripts]
 dxt-to-perfetto = "darshan_tools.dxt_to_perfetto:convert_dxt_to_perfetto_cli"
-
+summary-to-csv = "darshan_tools.parser:parse_summary_cli"
 [project.urls]
 Homepage = "https://github.com/lucaparisi91/DXT_trace.git"
 Repository = "https://github.com/lucaparisi91/DXT_trace.git"

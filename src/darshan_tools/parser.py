@@ -21,7 +21,7 @@ def parse_summary(filename: str) -> pd.DataFrame:
     with open(filename, "r") as f:
         lines = f.readlines()
         for line in lines:
-            pattern = r"\s*(POSIX)\s+(\d+)\s+\d+\s+(\S+)\s+(\d+)\s(\S+)"
+            pattern = r"\s*(\w+)\s+(\d+)\s+\d+\s+(\S+)\s+(\d+)\s(\S+)"
             m = re.match(pattern, line)
 
             if m is not None:
@@ -86,3 +86,18 @@ def parse_dxt(filename: str) -> pd.DataFrame:
         
     df = pd.DataFrame(events)
     return df
+
+def parse_summary_cli():
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(description="Parse a Darshan summary log file and convert it to a Pandas DataFrame.")
+    parser.add_argument("input_file", help="Path to the parsed Darshan summary report.")
+    parser.add_argument("--output_file",default=sys.stdout ,help="Path to save the parsed DataFrame as a CSV file. \
+                                                                If not provided, the DataFrame will be printed to " \
+                                                                    "standard output.")
+    args = parser.parse_args()
+    
+    df = parse_summary(args.input_file)
+
+    df.to_csv(args.output_file, index=False,sep=" ")
